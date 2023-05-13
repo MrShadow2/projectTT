@@ -1,16 +1,4 @@
-/* .neumorphic-button {
-  background-color: #f0f0f0;
-  color: #444;
-  font-size: 1.2rem;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 20px;
-  box-shadow: 5px 5px 10px #c7c7c7, 
-              -5px -5px 10px #ffffff;
 
-  display: block;
-  margin: 0 auto;
-} */
 .neumorphic-button {
   background-color: #1f1f1f;
   color: #f0f0f0;
@@ -20,7 +8,7 @@
   border-radius: 20px;
   box-shadow: 5px 5px 10px #0a0a0a, 
               -5px -5px 10px #353535;
-  /* add vendor prefixes as needed for browser compatibility */
+  
   display: block;
   margin: 0 auto;
   cursor: pointer;
