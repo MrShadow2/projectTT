@@ -44,7 +44,7 @@ const options = {
   const Sample = ({mostOccurringWords}) => {
     console.log(mostOccurringWords) 
     const [chart, setChart] = useState(null);
-    //destructure the props
+    
     const words = mostOccurringWords.map(pair => pair.word);
     const counts = mostOccurringWords.map(pair => pair.count);
     console.log(words)
