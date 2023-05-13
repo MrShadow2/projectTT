@@ -23,10 +23,10 @@ const Content = () => {
 
   useEffect(() => {
     if (data) {
-      const words = data.split(/\s+/); // split text into array of words
+      const words = data.split(/\s+/); 
       const counts = {};
   
-      // count the occurrence of each word
+      
       words.forEach(word => {
         if (counts[word]) {
           counts[word] += 1;
@@ -35,13 +35,13 @@ const Content = () => {
         }
       });
   
-      // sort the counts in descending order
+      
       const sortedCounts = Object.entries(counts)
         .sort((a, b) => b[1] - a[1]);
   
       setWordCounts(sortedCounts);
   
-      // get the 20 most occurring words with their counts
+      
       const mostOccurring = sortedCounts.slice(0, 20).map(([word, count]) => ({ word, count }));
       setMostOccurringWords(mostOccurring);
   
@@ -62,7 +62,7 @@ const Content = () => {
       ) : (
         <>
           
-            {/* <BChart } /> */}
+      
             <Sample mostOccurringWords={mostOccurringWords}/>
        
         </>
@@ -70,7 +70,6 @@ const Content = () => {
     </div>
   );
 };
-// export const mostOccurringWords = sortedCounts.slice(0, 20).map(([word, count]) => ({ word, count }));
 
 export default Content;
 
